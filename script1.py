@@ -5,4 +5,4 @@ if data:
 else:
 	return 10
 while(data = True):
-	print("Yes")
+	print("Yes")new
