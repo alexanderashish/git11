@@ -6,3 +6,4 @@ else:
 	return 10
 while(data = True):
 	print("Yes")newdata
+data
