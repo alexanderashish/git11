@@ -14,13 +14,12 @@ pipeline {
         stage('User Data') {
             when {
                 expression { 
-                   return params.Username == 'abc'
+                    params.Username == 'abc'
                 }
             }
             steps {
-                    sh """
+                    
                     echo "deploy to production"
-                    """
                 }
             }
     } 
