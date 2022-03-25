@@ -21,6 +21,7 @@ pipeline {
             when {
                 expression { 
                     params.Username == 'abc'
+		    params.Username != 'xyz'
                 }
             }
             steps {
