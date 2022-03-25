@@ -14,7 +14,7 @@ pipeline {
         }
 	stage('Stage Test') {
             steps {
-		    echo 'The country has been selected as ${params.Country}'
+		    echo "The country has been selected as ${params.Country}"
             }
         }
         stage('User Data') {
