@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        string(name: 'Username', defaultValue: '' , description: 'Please write your username')
+        string(name: 'Username', defaultValue: 'NA' , description: 'Please write your username')
         string(name: 'EmailID', defaultValue: '' , description: 'Please write your email')
 	  password(name: 'Password', defaultValue: '' , description: '')
         choice(name: 'Country', choices:[ 'US','India','Canada','UK','China'] , description: 'Please select your country')
@@ -20,8 +20,8 @@ pipeline {
         stage('User Data') {
             when {
                 expression { 
-                    params.Username == 'abc'
-		    params.Username != 'xyz'
+                    params.Username == 'NA'
+		    params.Username != 'abc'
                 }
             }
             steps {
